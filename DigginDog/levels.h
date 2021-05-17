@@ -1,0 +1,29 @@
+//Josh Pritt (ramgarden)
+//Brenna Kaminski (snackthunder)
+//May 7th, 2021
+//Diggin' Dog
+//Arrays that represent the tiles in each level.
+
+#define GRASS      0
+#define WATER      1
+#define TREES      2
+#define STONE      3
+#define GNDTOP1    4
+#define GNDTOP2    5
+#define GNDBTM1    6
+#define GNDBTM2    7
+#define SKY1       8
+#define SKY2       9
+#define SKY3      10
+
+const int WORLD_HEIGHT = 4;
+const int WORLD_WIDTH = 20;
+const int TILE_WIDTH = 16;
+
+//level 1 map
+int world1[WORLD_HEIGHT][WORLD_WIDTH] = {
+  { SKY2, SKY1, SKY1, SKY1, SKY1, SKY1, SKY3, SKY1, SKY1, SKY1, SKY2, SKY1, SKY1, SKY1, SKY1, SKY1, SKY3, SKY1, SKY1, SKY1 },
+  { SKY1, SKY1, SKY1, SKY1, SKY2, SKY1, SKY1, SKY1, SKY1, SKY1, SKY1, SKY1, SKY1, SKY1, SKY2, SKY1, SKY1, SKY1, SKY1, SKY1 },
+  { GNDTOP1, GNDTOP1, GNDTOP2, GNDTOP1, GNDTOP2, GNDTOP2, GNDTOP1, GNDTOP2, GNDTOP2, GNDTOP1, GNDTOP1, GNDTOP1, GNDTOP2, GNDTOP1, GNDTOP2, GNDTOP2, GNDTOP1, GNDTOP2, GNDTOP2, GNDTOP1 },
+  { GNDBTM2, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM2, GNDBTM2, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM2, GNDBTM1, GNDBTM2 }
+};
